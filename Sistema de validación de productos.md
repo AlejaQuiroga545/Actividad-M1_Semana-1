@@ -110,12 +110,12 @@ Muestra un resumen detallado de la compra con los datos ingresados y calculados.
 
 ```python
 print(f"\nResumen de compra:")
-print(f"Producto: {producto}")
+print(f"\nProducto: {producto}")
 print(f"Cantidad: {cantidad}")
 print(f"Precio por unidad: ${precio:,.2f}")
 print(f"Subtotal: ${subTotal:,.2f}")
 print(f"Descuento aplicado: {desc}%")
-print(f"Total a pagar: ${total:,.2f}")
+print(f"\nTOTAL A PAGAR: ${total:,.2f}")
 ```
 - Impresión con formato (`f-strings`) que permite insertar variables directamente dentro del texto usando llaves para mostrar números con comas y dos decimales.
 - `,` agrega separadores de miles (por ejemplo, 1,000 en vez de 1000).
