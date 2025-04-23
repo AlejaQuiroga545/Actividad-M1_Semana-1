@@ -94,16 +94,22 @@ print(f"Total a pagar: ${total:,.2f}")
 ## 🧾 Código Completo
 
 ```python
+# Definimos la función - Nombre de la función - Parámetro (variable)
 def convertir_a_numero(entrada):
+
+    # 1. Elimina los puntos en los números
     entrada = entrada.replace(".", "")
+
+    # 2. Intenta convertir el número a entero directamente
     try:
         return int(entrada)
-    finally:
-        print("")
+    finally: print  ("")
 
+# --- Datos de entrada ---
 print("Ingresa el nombre del producto:")
 producto = input()
 
+# Obtener precio
 precio = None
 while precio is None or precio <= 0:
     entrada_precio = input("Ingresa el precio por unidad: ")
@@ -111,6 +117,7 @@ while precio is None or precio <= 0:
     if precio is None or precio <= 0:
         print("El precio debe ser un número positivo.")
 
+# Obtener cantidad
 cantidad = None
 while cantidad is None or cantidad <= 0:
     entrada_cantidad = input("Ingresa la cantidad de productos que llevas: ")
@@ -118,8 +125,10 @@ while cantidad is None or cantidad <= 0:
     if cantidad is None or cantidad <= 0:
         print("La cantidad debe ser un número positivo.")
 
+# --- Procesamiento ---
 subTotal = precio * cantidad
 
+# Obtener descuento
 print("Ingresa el descuento (presiona Enter si NO aplica):")
 entrada_descuento = input()
 
@@ -136,8 +145,10 @@ else:
         print("Descuento inválido. Se aplicará 0%.")
         desc = 0.0
 
+# Calcular total
 total = subTotal - (subTotal * desc / 100)
 
+# --- Salida formateada ---
 print(f"\nResumen de compra:")
 print(f"Producto: {producto}")
 print(f"Cantidad: {cantidad}")
