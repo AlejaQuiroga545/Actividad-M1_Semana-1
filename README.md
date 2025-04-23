@@ -1,7 +1,7 @@
 # Módulo 1 - Semana 1
 # Sistema de validación de productos en Python  🛒
 
-Este es un pequeño sistema interactivo hecho en Python que solicita datos sobre una compra (producto, precio, cantidad, y descuento) y luego muestra un resumen con el total a pagar.
+Esta es una actividad hecha en Python para validar los datos sobre una compra (producto, precio, cantidad, y descuento) y luego muestra un resumen con el total a pagar.
 
 Ideal para practicar estructuras básicas de Python como:
 - Funciones
