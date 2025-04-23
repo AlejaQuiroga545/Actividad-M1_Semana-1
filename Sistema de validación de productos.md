@@ -191,12 +191,12 @@ total = subTotal - (subTotal * desc / 100)
 # DATOS DE SALIDA
 
 print(f"\nResumen de compra:")
-print(f"Producto: {producto}")
+print(f"\nProducto: {producto}")
 print(f"Cantidad: {cantidad}")
 print(f"Precio por unidad: ${precio:,.2f}")
 print(f"Subtotal: ${subTotal:,.2f}")
 print(f"Descuento aplicado: {desc}%")
-print(f"Total a pagar: ${total:,.2f}")
+print(f"\nTOTAL A PAGAR: ${total:,.2f}")
 
 ```
 
